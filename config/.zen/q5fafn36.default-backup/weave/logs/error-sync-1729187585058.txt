@@ -1,0 +1,197 @@
+1729186977928	Sync.LogManager	DEBUG	Flushing file log
+1729186977928	FirefoxAccounts	INFO	Already fetching device list, return existing promise
+1729186977929	FirefoxAccounts	INFO	Already fetching device list, return existing promise
+1729186977930	Sync.LogManager	DEBUG	Log cleanup threshold time: 1728322977930
+1729186977930	Sync.LogManager	DEBUG	Done deleting files.
+1729186977932	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1729186977932	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729186977932	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729186977932	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729186977932	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729186977932	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729186977932	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729186977932	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729186978363	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/devices?filterIdleDevicesTimestamp=1727372564495 200
+1729186978363	Hawk	DEBUG	(Response) /account/devices?filterIdleDevicesTimestamp=1727372564495: code: 200 - Status text: 
+1729186978363	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -363
+1729186978363	FirefoxAccounts	INFO	Got new device list: 03bbf0ee8ec72099d1ac2a33252f460c, 3bd45fb87f1ad2a5c7a1989c6b8bf466, 73d0d68fd449a9762d385428fe20d832, cac5966abec7ba49b866966bd17f95be
+1729186978364	FirefoxAccounts	DEBUG	FxAccountsPush loading service
+1729186978364	FirefoxAccounts	DEBUG	FxAccountsPush initialized
+1729186978365	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1729186978365	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1729186978365	FirefoxAccounts	TRACE	Our push subscription looks OK
+1729186978365	FirefoxAccounts	INFO	updating the cache
+1729186983377	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729186988441	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187002964	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187002965	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187002965	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187002966	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187002966	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187002968	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187002976	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187002982	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187002984	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187007232	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187007235	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187007274	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187007992	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187024525	Sync.AddonsReconciler	DEBUG	Add-on change: onDisabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187024525	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187024525	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187024525	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187024525	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 4 {74145f27-f039-47ce-a470-a662b129930a}
+1729187024526	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187024546	Sync.AddonsReconciler	DEBUG	Add-on change: onEnabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187024546	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187024546	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187024546	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187024546	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 3 {74145f27-f039-47ce-a470-a662b129930a}
+1729187024547	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187084627	Sync.AddonsReconciler	DEBUG	Add-on change: onDisabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187084627	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187084627	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187084627	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187084627	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 4 {74145f27-f039-47ce-a470-a662b129930a}
+1729187084629	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187084651	Sync.AddonsReconciler	DEBUG	Add-on change: onEnabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187084651	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187084651	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187084651	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187084651	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 3 {74145f27-f039-47ce-a470-a662b129930a}
+1729187084651	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187100314	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187102776	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187102780	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187105607	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187144695	Sync.AddonsReconciler	DEBUG	Add-on change: onDisabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187144695	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187144695	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187144695	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187144695	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 4 {74145f27-f039-47ce-a470-a662b129930a}
+1729187144696	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187144714	Sync.AddonsReconciler	DEBUG	Add-on change: onEnabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187144714	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187144714	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187144714	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187144714	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 3 {74145f27-f039-47ce-a470-a662b129930a}
+1729187144715	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187167442	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187172505	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187204775	Sync.AddonsReconciler	DEBUG	Add-on change: onDisabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187204775	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187204775	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187204775	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187204775	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 4 {74145f27-f039-47ce-a470-a662b129930a}
+1729187204776	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187204843	Sync.AddonsReconciler	DEBUG	Add-on change: onEnabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187204843	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187204843	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187204843	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187204843	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 3 {74145f27-f039-47ce-a470-a662b129930a}
+1729187204843	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187264834	Sync.AddonsReconciler	DEBUG	Add-on change: onDisabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187264835	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187264835	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187264835	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187264835	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 4 {74145f27-f039-47ce-a470-a662b129930a}
+1729187264836	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187264859	Sync.AddonsReconciler	DEBUG	Add-on change: onEnabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187264859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187264859	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187264859	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187264859	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 3 {74145f27-f039-47ce-a470-a662b129930a}
+1729187264859	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187325398	Sync.AddonsReconciler	DEBUG	Add-on change: onDisabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187325398	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187325398	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187325398	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187325398	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 4 {74145f27-f039-47ce-a470-a662b129930a}
+1729187325399	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187325437	Sync.AddonsReconciler	DEBUG	Add-on change: onEnabled to {74145f27-f039-47ce-a470-a662b129930a}
+1729187325437	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1729187325437	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {74145f27-f039-47ce-a470-a662b129930a}
+1729187325437	Sync.AddonsReconciler	INFO	Change recorded for {74145f27-f039-47ce-a470-a662b129930a}
+1729187325437	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 3 {74145f27-f039-47ce-a470-a662b129930a}
+1729187325437	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1729187369024	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187374024	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187395089	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187395742	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187396245	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187396786	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187397859	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187397900	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187398390	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187399011	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187399727	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187400094	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187451972	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187456980	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187459177	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187459184	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187459264	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187459449	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187459829	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1729187459829	FirefoxAccounts	DEBUG	getOAuthToken enter
+1729187459830	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1729187459830	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1729187459830	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1729187464229	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187466875	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1729187466875	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729187466875	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729187466875	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729187466875	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1729187470433	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187470435	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187475489	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187475498	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187475499	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187479276	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187479277	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187480539	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187490659	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187490661	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187495708	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187562278	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1729187562279	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1729187567284	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.network, service: error.login.failed, sync: success.sync>
+1729187577948	Sync.Service	DEBUG	User-Agent: Zen/1.0.1-a.10 (Linux x86_64) FxSync/1.133.0.20241015164256.desktop
+1729187577948	Sync.Service	INFO	Starting sync at 2024-10-18 00:52:57 in browser session GA3g0SfPWiM7
+1729187577948	Sync.Service	DEBUG	In sync: should login.
+1729187577948	Sync.Service	INFO	User logged in successfully - verifying login.
+1729187577948	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1729187577948	Sync.SyncAuthManager	DEBUG	unlockAndVerifyAuthState already has (or can fetch) sync keys
+1729187577948	Sync.Status	DEBUG	Status.login: error.login.reason.network => success.status_ok
+1729187577948	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1729187577948	Sync.Service	DEBUG	Fetching unlocked auth state returned success.status_ok
+1729187577948	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1729187577948	Sync.SyncAuthManager	INFO	Getting sync key
+1729187577948	FirefoxAccounts	DEBUG	getOAuthToken enter
+1729187577948	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1729187577948	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1729187577948	Sync.SyncAuthManager	INFO	Getting a sync token from: https://token.services.mozilla.com/1.0/sync/1.5
+1729187577948	Sync.SyncAuthManager	DEBUG	Getting a token using OAuth
+1729187577948	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1729187577948	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1729187585056	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1729187585057	Sync.SyncAuthManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1729187585057	Sync.Status	DEBUG	Status.login: success.status_ok => error.login.reason.network
+1729187585057	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1729187585057	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1729187585057	Sync.SyncAuthManager	INFO	Failed to fetch the cluster URL: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1729187585057	Sync.Service	DEBUG	verifyLogin failed: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1729187585057	Sync.Status	DEBUG	Status.login: error.login.reason.network => error.login.reason.network
+1729187585057	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1729187585057	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1729187585057	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1729187585057	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1729187585058	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1729187585058	Sync.Service	DEBUG	Exception calling WrappedLock: Error: Login failed: error.login.reason.network(resource://services-sync/service.sys.mjs:1041:15) JS Stack trace: onNotify@service.sys.mjs:1041:15
+1729187585058	Sync.Service	DEBUG	Not syncing: login returned false.
+1729187585058	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1729187585058	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent

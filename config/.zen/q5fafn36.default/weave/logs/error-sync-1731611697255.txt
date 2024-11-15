@@ -1,0 +1,137 @@
+1731611332044	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1731611431287	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1731611431656	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1731611433079	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1731611436407	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1731611436407	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1731611436415	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1731611436416	Sync.Engine.Tabs	INFO	Posting 1 records of 19671 bytes with batch=true
+1731611436416	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1731611436416	Sync.Collection	DEBUG	POST Length: 19671
+1731611436727	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/191270751/storage/tabs?batch=true&commit=true
+1731611436728	Sync.Telemetry	INFO	Observed notification weave:engine:sync:uploaded but no current sync is being recorded.
+1731611488165	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1731611488697	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1731611493240	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1731611493240	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1731611493268	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1731611493270	Sync.Engine.Tabs	INFO	Posting 1 records of 19799 bytes with batch=true
+1731611493270	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1731611493270	FirefoxAccounts	DEBUG	getOAuthToken enter
+1731611493270	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1731611493270	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1731611493270	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1731611493271	Sync.Collection	DEBUG	POST Length: 19799
+1731611493516	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1731611493623	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/191270751/storage/tabs?batch=true&commit=true
+1731611493624	Sync.Telemetry	INFO	Observed notification weave:engine:sync:uploaded but no current sync is being recorded.
+1731611566480	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1731611566484	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1731611566533	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1731611571507	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1731611571507	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1731611571510	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1731611571511	Sync.Engine.Tabs	INFO	Posting 1 records of 19799 bytes with batch=true
+1731611571512	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1731611571512	Sync.Collection	DEBUG	POST Length: 19799
+1731611571843	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/191270751/storage/tabs?batch=true&commit=true
+1731611571861	Sync.Telemetry	INFO	Observed notification weave:engine:sync:uploaded but no current sync is being recorded.
+1731611582066	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1731611587078	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1731611587078	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1731611587088	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1731611587089	Sync.Engine.Tabs	INFO	Posting 1 records of 19799 bytes with batch=true
+1731611587089	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1731611587089	Sync.Collection	DEBUG	POST Length: 19799
+1731611587478	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/191270751/storage/tabs?batch=true&commit=true
+1731611587492	Sync.Telemetry	INFO	Observed notification weave:engine:sync:uploaded but no current sync is being recorded.
+1731611588594	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1731611593671	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1731611593671	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1731611593687	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1731611593689	Sync.Engine.Tabs	INFO	Posting 1 records of 19799 bytes with batch=true
+1731611593689	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1731611593689	Sync.Collection	DEBUG	POST Length: 19799
+1731611594080	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/191270751/storage/tabs?batch=true&commit=true
+1731611594090	Sync.Telemetry	INFO	Observed notification weave:engine:sync:uploaded but no current sync is being recorded.
+1731611610124	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1731611615144	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1731611615144	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1731611615154	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1731611615155	Sync.Engine.Tabs	INFO	Posting 1 records of 19799 bytes with batch=true
+1731611615155	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1731611615155	FirefoxAccounts	DEBUG	getOAuthToken enter
+1731611615155	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1731611615155	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1731611615155	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1731611615156	Sync.Collection	DEBUG	POST Length: 19799
+1731611615394	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1731611615485	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/191270751/storage/tabs?batch=true&commit=true
+1731611615494	Sync.Telemetry	INFO	Observed notification weave:engine:sync:uploaded but no current sync is being recorded.
+1731611638948	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1731611638956	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1731611642353	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1731611643982	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1731611643982	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1731611643998	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1731611643998	Sync.Engine.Tabs	INFO	Posting 1 records of 19799 bytes with batch=true
+1731611643999	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1731611643999	Sync.Collection	DEBUG	POST Length: 19799
+1731611644413	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/191270751/storage/tabs?batch=true&commit=true
+1731611644422	Sync.Telemetry	INFO	Observed notification weave:engine:sync:uploaded but no current sync is being recorded.
+1731611651851	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1731611657022	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/open-uri
+1731611657022	FirefoxAccounts	TRACE	Getting command keys: https://identity.mozilla.com/cmd/close-uri/v1
+1731611657026	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1731611657027	Sync.Engine.Tabs	INFO	Posting 1 records of 19799 bytes with batch=true
+1731611657027	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1731611657027	Sync.Collection	DEBUG	POST Length: 19799
+1731611657418	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/191270751/storage/tabs?batch=true&commit=true
+1731611657420	Sync.Telemetry	INFO	Observed notification weave:engine:sync:uploaded but no current sync is being recorded.
+1731611695502	Sync.Browser	INFO	Sending a tab to 1bfe4fafe00a5e1e2d962ddd0c61c948, dd163c2df78d94ca7f88ab1b61f999c5, 0a8256ab91d9b98299e1f4e10339bec0, 81657bd46dcfc94271673f15624bdad9, d1176bbb6b481154b6f76f1ed601b07c using FxA commands.
+1731611695503	FirefoxAccounts	INFO	Sending a tab to 5 devices.
+1731611695503	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1731611695506	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/account/devices/invoke_command
+1731611695506	Services.Common.RESTRequest	DEBUG	POST Length: 541
+1731611695929	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/account/devices/invoke_command 200
+1731611695929	Hawk	DEBUG	(Response) /account/devices/invoke_command: code: 200 - Status text: 
+1731611695929	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -929
+1731611695929	FirefoxAccounts	ERROR	Sending was only partially successful: {"enqueued":true,"notified":false,"notifyError":"unknown"}
+1731611695929	FirefoxAccounts	INFO	Payload sent to device 1bfe4fafe00a5e1e2d962ddd0c61c948.
+1731611695929	Sync.Telemetry	DEBUG	recording event: {"object":"command-sent","method":"open-uri","value":"8610cb9f69e0dad939b267007c0b9c4bfde099b8c8f81a7892af3b583c8ff9b0","extra":{"flowID":"3a281943-5780-483e-92fd-7a3e92e73d1d","streamID":"f5278907-96ab-4f7c-bc77-428fa6c729d8"}}
+1731611695930	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1731611695932	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/account/devices/invoke_command
+1731611695932	Services.Common.RESTRequest	DEBUG	POST Length: 541
+1731611696228	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/account/devices/invoke_command 200
+1731611696228	Hawk	DEBUG	(Response) /account/devices/invoke_command: code: 200 - Status text: 
+1731611696228	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -228
+1731611696228	FirefoxAccounts	INFO	Successfully sent: {"enqueued":true,"notified":true}
+1731611696228	FirefoxAccounts	INFO	Payload sent to device dd163c2df78d94ca7f88ab1b61f999c5.
+1731611696229	Sync.Telemetry	DEBUG	recording event: {"object":"command-sent","method":"open-uri","value":"e45299d57d04e9a9e75b7c1825234630e72871baec4df3a2179a49d26e4214c1","extra":{"flowID":"3a281943-5780-483e-92fd-7a3e92e73d1d","streamID":"7dade19b-f0c1-41ac-b0ef-fce1543ff37d"}}
+1731611696229	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1731611696232	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/account/devices/invoke_command
+1731611696232	Services.Common.RESTRequest	DEBUG	POST Length: 541
+1731611696513	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/account/devices/invoke_command 200
+1731611696513	Hawk	DEBUG	(Response) /account/devices/invoke_command: code: 200 - Status text: 
+1731611696513	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -513
+1731611696513	FirefoxAccounts	INFO	Successfully sent: {"enqueued":true,"notified":true}
+1731611696513	FirefoxAccounts	INFO	Payload sent to device 0a8256ab91d9b98299e1f4e10339bec0.
+1731611696513	Sync.Telemetry	DEBUG	recording event: {"object":"command-sent","method":"open-uri","value":"b055d3fa4675f7bdba047fe0618ecca2af14510138dda66dd3854eba06bb3e1d","extra":{"flowID":"3a281943-5780-483e-92fd-7a3e92e73d1d","streamID":"b841b195-f447-4972-afb7-c06a1798c230"}}
+1731611696513	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1731611696515	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/account/devices/invoke_command
+1731611696515	Services.Common.RESTRequest	DEBUG	POST Length: 541
+1731611696791	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/account/devices/invoke_command 200
+1731611696791	Hawk	DEBUG	(Response) /account/devices/invoke_command: code: 200 - Status text: 
+1731611696791	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -791
+1731611696791	FirefoxAccounts	INFO	Successfully sent: {"enqueued":true,"notified":true}
+1731611696791	FirefoxAccounts	INFO	Payload sent to device 81657bd46dcfc94271673f15624bdad9.
+1731611696791	Sync.Telemetry	DEBUG	recording event: {"object":"command-sent","method":"open-uri","value":"7af8071922e7e15a84eb27343ada71185362c4508c6b71ee48f7cd1cc6fd2db1","extra":{"flowID":"3a281943-5780-483e-92fd-7a3e92e73d1d","streamID":"e296f60e-6a1a-4edb-935a-ffffb48f14be"}}
+1731611696791	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1731611696793	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/account/devices/invoke_command
+1731611696793	Services.Common.RESTRequest	DEBUG	POST Length: 541
+1731611697253	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/account/devices/invoke_command 200
+1731611697253	Hawk	DEBUG	(Response) /account/devices/invoke_command: code: 200 - Status text: 
+1731611697253	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -253
+1731611697253	FirefoxAccounts	INFO	Successfully sent: {"enqueued":true,"notified":true}
+1731611697253	FirefoxAccounts	INFO	Payload sent to device d1176bbb6b481154b6f76f1ed601b07c.
+1731611697253	Sync.Telemetry	DEBUG	recording event: {"object":"command-sent","method":"open-uri","value":"dd5cf0672f1264309a0a2a343acb5c1795f476d4a6fd2ea1d7ef611852030421","extra":{"flowID":"3a281943-5780-483e-92fd-7a3e92e73d1d","streamID":"d16f1c67-724f-44f6-b585-dc24903057ea"}}
