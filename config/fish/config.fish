@@ -29,7 +29,7 @@ alias p=paru
 alias cls="clear && fastfetch"
 alias venv="python -m venv venv && source venv/bin/activate.fish"
 alias ls='eza --icons=always --color=always -a1 -T --level 1'
-alias ll='eza --icons=always --color=always -alh -T --level 1'
+alias ll='eza --icons=always --color=always -alh -T --level 1 --git'
 alias du=dust
 alias df=duf
 alias ip='ip -color=auto'
