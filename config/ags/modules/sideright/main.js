@@ -5,14 +5,14 @@ const { Box } = Widget;
 import clickCloseRegion from '../.commonwidgets/clickcloseregion.js';
 
 export default () => PopupWindow({
-    keymode: 'on-demand',
-    anchor: ['right', 'top', 'bottom'],
-    name: 'sideright',
-    layer: 'overlay',
-    child: Box({
-        children: [
-            clickCloseRegion({ name: 'sideright', multimonitor: false, fillMonitor: 'horizontal' }),
-            SidebarRight(),
-        ]
-    })
+  keymode: 'on-demand',
+  anchor: ['right', 'top', 'bottom'],
+  name: 'sideright',
+  layer: 'top',
+  child: Box({
+    children: [
+      clickCloseRegion({ name: 'sideright', multimonitor: false, fillMonitor: 'horizontal' }),
+      SidebarRight(),
+    ]
+  })
 });

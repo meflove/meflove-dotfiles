@@ -6,10 +6,11 @@ if status is-login
     end
 end
 
-if status is-interactive
-    # Commands to run in interactive sessions can go here
+status is-interactive; and begin
     set fish_greeting
-
+    set fish_tmux_default_session_name meflove
+    set fish_tmux_autostart_once false
+    set fish_tmux_autostart true
 end
 
 fish_default_key_bindings
@@ -27,8 +28,10 @@ alias g=git
 alias p=paru
 alias cls="clear && fastfetch"
 alias venv="python -m venv venv && source venv/bin/activate.fish"
-alias exa="exa -1 --icons"
-alias eza="exa -la"
+alias ls='eza --icons=always --color=always -a1 -T --level 1'
+alias ll='eza --icons=always --color=always -alh -T --level 1'
+alias du=dust
+alias df=duf
 alias ip='ip -color=auto'
 alias grep='grep --color=auto'
 alias cat=bat
@@ -37,8 +40,6 @@ alias diff="kitty +kitten diff"
 alias clip="kitty +kitten clipboard"
 # alias ssh="kitty +kitten ssh"
 alias ytdlp="cd /home/meflove/Yt-DLP/ && yt-dlp -f 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -S vcodec:h264"
-alias ls="exa -1 --icons"
-alias ll="exa -la"
 alias ipv4="ip addr show | grep 'inet ' | grep -v '127.0.0.1' | cut -d' ' -f6 | cut -d/ -f1"
 alias ipv6="ip addr show | grep 'inet6 ' | cut -d ' ' -f6 | sed -n '2p'"
 alias hmmm='paru -Sy &> /dev/null && paru -Qu'

@@ -1,5 +1,5 @@
 # BEGIN_KITTY_THEME
-# Tokyo Night Moon
+# Tokyo Night
 include current-theme.conf
 # END_KITTY_THEME
 window_padding_width 15
@@ -19,3 +19,5 @@ bold_italic_font auto
 map ctrl+c copy_to_clipboard
 map cmd+c copy_to_clipboard 🍎
 clipboard_control write-clipboard read-clipboard
+
+confirm_os_window_close 0
