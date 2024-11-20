@@ -1,8 +1,0 @@
-
-      @-moz-document url-prefix("chrome:") {
-        .titlebar-buttonbox-container {
-  padding-right: var(--zen-element-separation);
-}
-
-      }
-    
