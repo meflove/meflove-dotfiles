@@ -1,23 +1,7 @@
 return {
-  -- lazy.nvim:
   {
-    "smoka7/multicursors.nvim",
-    event = "VeryLazy",
-    dependencies = {
-      "nvimtools/hydra.nvim",
-    },
-    opts = {},
-    cmd = { "MCstart", "MCvisual", "MCclear", "MCpattern", "MCvisualPattern", "MCunderCursor" },
-    keys = {
-      {
-        mode = { "v", "n" },
-        "<Leader>m",
-        "<cmd>MCstart<cr>",
-        desc = "Create a selection for selected text or word under the cursor",
-      },
-    },
-  },
-  {
-    "mcauley-penney/visual-whitespace.nvim",
+    "olimorris/persisted.nvim",
+    lazy = false, -- make sure the plugin is always loaded at startup
+    config = true,
   },
 }
