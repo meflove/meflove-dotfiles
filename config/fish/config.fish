@@ -53,6 +53,8 @@ alias Holes='sudo netstat -tupln'
 
 abbr mkdir 'mkdir -p'
 
+source ~/.config/fish/themes/tokyo-night-moon.fish
+
 # Created by `pipx` on 2024-06-20 14:14:50
 set PATH $PATH /home/user/.local/bin
 zoxide init fish | source
