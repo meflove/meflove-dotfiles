@@ -88,7 +88,7 @@ let configOptions = {
     layout: "qwerty_full", // See modules/onscreenkeyboard/onscreenkeyboard.js for available layouts
   },
   overview: {
-    scale: 0.18, // Relative to screen size
+    scale: 0.15, // Relative to screen size
     numOfRows: 2,
     numOfCols: 5,
     wsNumScale: 0.09,

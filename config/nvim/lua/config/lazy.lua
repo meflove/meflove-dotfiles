@@ -14,6 +14,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.lsp.util.make_range_params(0, "utf-16")
+vim.lsp.util.make_position_params(0, "utf-16")
+
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
