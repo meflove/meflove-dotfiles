@@ -30,7 +30,7 @@ return {
       sources = {
         completion = {
           -- remember to enable your providers here
-          enabled_providers = { "lsp", "path", "snippets", "buffer", "digraphs", "lazydev" },
+          enabled_providers = { "lsp", "path", "snippets", "buffer", "lazydev" },
         },
         compat = { "luasnip" },
         snippets = {
@@ -60,22 +60,6 @@ return {
             },
           },
 
-          -- create provider
-          digraphs = {
-            name = "digraphs", -- IMPORTANT: use the same name as you would for nvim-cmp
-            module = "blink.compat.source",
-
-            -- all blink.cmp source config options work as normal:
-            score_offset = -3,
-
-            opts = {
-              -- this table is passed directly to the proxied completion source
-              -- as the `option` field in nvim-cmp's source config
-
-              -- this is an option from cmp-digraphs
-              cache_digraphs_on_start = true,
-            },
-          },
           lsp = {
             -- dont show LuaLS require statements when lazydev has items
             fallback_for = { "lazydev" },

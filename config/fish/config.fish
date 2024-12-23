@@ -20,6 +20,8 @@ starship init fish | source
 #     cat ~/.cache/ags/user/generated/terminal/sequences.txt
 # end
 
+alias visudo='EDITOR="nvim -u NONE" command sudo visudo'
+alias se=sudoedit
 alias pamcan=pacman
 alias m=micro
 alias n=nvim
