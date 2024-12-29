@@ -54,6 +54,7 @@ alias PublicIP='curl ifconfig.me && echo ""'
 alias Holes='sudo netstat -tupln'
 
 abbr mkdir 'mkdir -p'
+abbr rm 'rm -r'
 
 source ~/.config/fish/themes/tokyo-night-moon.fish
 

@@ -7,7 +7,6 @@ return {
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
       { "saghen/blink.compat", version = "*", opts = { impersonate_nvim_cmp = true } },
-      { "dmitmel/cmp-digraphs" },
     },
     -- lock compat to tagged versions, if you've also locked blink.cmp to tagged versions
     -- use a release tag to download pre-built binaries
@@ -26,107 +25,94 @@ return {
       -- see the "default configuration" section below for full documentation on how to define
       -- your own keymap.
       keymap = { preset = "super-tab" },
-
-      sources = {
-        completion = {
-          -- remember to enable your providers here
-          enabled_providers = { "lsp", "path", "snippets", "buffer", "lazydev" },
-        },
-        compat = { "luasnip" },
-        snippets = {
-          expand = function(snippet)
-            require("luasnip").lsp_expand(snippet)
-          end,
-          active = function(filter)
-            if filter and filter.direction then
-              return require("luasnip").jumpable(filter.direction)
-            end
-            return require("luasnip").in_snippet()
-          end,
-          jump = function(direction)
-            require("luasnip").jump(direction)
-          end,
-        },
-        providers = {
-          luasnip = {
-            name = "luasnip",
-            module = "blink.compat.source",
-
-            score_offset = -3,
-
-            opts = {
-              use_show_condition = false,
-              show_autosnippets = true,
-            },
-          },
-
-          lsp = {
-            -- dont show LuaLS require statements when lazydev has items
-            fallback_for = { "lazydev" },
-          },
-          lazydev = {
-            name = "LazyDev",
-            module = "lazydev.integrations.blink",
-          },
-        },
-      },
-
-      highlight = {
-        -- sets the fallback highlight groups to nvim-cmp's highlight groups
-        -- useful for when your theme doesn't support blink.cmp
-        -- will be removed in a future release, assuming themes add support
-        use_nvim_cmp_as_default = false,
-      },
-      -- set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
-      -- adjusts spacing to ensure icons are aligned
-      nerd_font_variant = "normal",
-
-      windows = {
-        autocomplete = {
-          -- draw = "reversed",
-          winblend = vim.o.pumblend,
-        },
-        documentation = {
-          auto_show = true,
-        },
-        ghost_text = {
-          enabled = vim.g.ai_cmp,
-        },
-      },
-
-      -- experimental auto-brackets support
-      accept = {
-        auto_brackets = { enabled = true },
-        expand_snippet = function(...)
-          return require("luasnip").lsp_expand(...)
+      snippets = {
+        expand = function(snippet)
+          require("luasnip").lsp_expand(snippet)
+        end,
+        active = function(filter)
+          if filter and filter.direction then
+            return require("luasnip").jumpable(filter.direction)
+          end
+          return require("luasnip").in_snippet()
+        end,
+        jump = function(direction)
+          require("luasnip").jump(direction)
         end,
       },
 
-      -- experimental signature help support
-      trigger = { signature_help = { enabled = true } },
+      sources = {
+        -- remember to enable your providers here
+        default = { "lsp", "path", "luasnip", "buffer", "lazydev" },
+        providers = {
+          lazydev = {
+            name = "LazyDev",
+            module = "lazydev.integrations.blink",
+            -- make lazydev completions top priority (see `:h blink.cmp`)
+            score_offset = 100,
+          },
+        },
+      },
+
+      appearance = {
+        -- Sets the fallback highlight groups to nvim-cmp's highlight groups
+        -- Useful for when your theme doesn't support blink.cmp
+        -- Will be removed in a future release
+        use_nvim_cmp_as_default = true,
+        -- Set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
+        -- Adjusts spacing to ensure icons are aligned
+        nerd_font_variant = "normal",
+      },
+      completion = {
+        accept = {
+          -- Create an undo point when accepting a completion item
+          create_undo_point = true,
+          -- Experimental auto-brackets support
+          auto_brackets = {
+            -- Whether to auto-insert brackets for functions
+            enabled = true,
+            -- Default brackets to use for unknown languages
+            default_brackets = { "(", ")" },
+            -- Overrides the default blocked filetypes
+            override_brackets_for_filetypes = {},
+            -- Synchronously use the kind of the item to determine if brackets should be added
+            kind_resolution = {
+              enabled = true,
+              blocked_filetypes = { "typescriptreact", "javascriptreact", "vue" },
+            },
+            -- Asynchronously use semantic token to determine if brackets should be added
+            semantic_token_resolution = {
+              enabled = true,
+              blocked_filetypes = { "java" },
+              -- How long to wait for semantic tokens to return before assuming no brackets should be added
+              timeout_ms = 400,
+            },
+          },
+        },
+      },
     },
     -- allows extending the enabled_providers array elsewhere in your config
     -- without having to redefining it
-    opts_extend = { "sources.completion.enabled_providers" },
-
-    -- LSP servers and clients communicate what features they support through "capabilities".
-    --  By default, Neovim support a subset of the LSP specification.
-    --  With blink.cmp, Neovim has *more* capabilities which are communicated to the LSP servers.
-    --  Explanation from TJ: https://youtu.be/m8C0Cq9Uv9o?t=1275
-    --
-    -- This can vary by config, but in general for nvim-lspconfig:
-
-    -- {
-    --   'neovim/nvim-lspconfig',
-    --   dependencies = { 'saghen/blink.cmp' },
-    --   config = function(_, opts)
-    --     local lspconfig = require('lspconfig')
-    --     for server, config in pairs(opts.servers or {}) do
-    --       config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
-    --       lspconfig[server].setup(config)
-    --     end
-    --   end
-    -- },
-    -- add blink.compat
+    opts_extend = { "sources.default" },
+  },
+  {
+    "folke/lazydev.nvim",
+    ft = "lua", -- only load on lua files
+    opts = {
+      library = {
+        -- See the configuration section for more details
+        -- Load luvit types when the `vim.uv` word is found
+        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+      },
+    },
+  },
+  { -- optional cmp completion source for require statements and module annotations
+    "hrsh7th/nvim-cmp",
+    opts = function(_, opts)
+      opts.sources = opts.sources or {}
+      table.insert(opts.sources, {
+        name = "lazydev",
+        group_index = 0, -- set group index to 0 to skip loading LuaLS completions
+      })
+    end,
   },
 }
