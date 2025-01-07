@@ -20,7 +20,7 @@ starship init fish | source
 #     cat ~/.cache/ags/user/generated/terminal/sequences.txt
 # end
 
-alias visudo='EDITOR="nvim -u NONE" command sudo visudo'
+alias visudo='EDITOR=nvim command sudo visudo'
 alias se=sudoedit
 alias pamcan=pacman
 alias m=micro
@@ -38,8 +38,7 @@ alias ip='ip -color=auto'
 alias grep='grep --color=auto'
 alias cat=bat
 alias icat="kitten icat"
-alias diff="kitty +kitten diff"
-alias clip="kitty +kitten clipboard"
+alias diff="delta"
 # alias ssh="kitty +kitten ssh"
 alias ytdlp="cd /home/meflove/Yt-DLP/ && yt-dlp -f 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -S vcodec:h264"
 alias ipv4="ip addr show | grep 'inet ' | grep -v '127.0.0.1' | cut -d' ' -f6 | cut -d/ -f1"
@@ -55,6 +54,7 @@ alias Holes='sudo netstat -tupln'
 
 abbr mkdir 'mkdir -p'
 abbr rm 'rm -r'
+abbr cp 'cp -r'
 
 source ~/.config/fish/themes/tokyo-night-moon.fish
 
@@ -71,7 +71,7 @@ end
 fzf_configure_bindings --variables=
 fish_add_path /home/user/.spicetify
 
-export LIBVIRT_DEFAULT_URI=\"qemu:///system\"
+export LIBVIRT_DEFAULT_URI="qemu:///system"
 set -xU MANPAGER 'less -R --use-color -Dd+r -Du+b'
 set -xU MANROFFOPT '-P -c'
 
