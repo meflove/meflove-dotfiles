@@ -15,6 +15,8 @@ end
 
 fish_default_key_bindings
 
+source $__fish_config_dir/functions/magic-enter-cmd.fish
+
 starship init fish | source
 # if test -f ~/.cache/ags/user/generated/terminal/sequences.txt
 #     cat ~/.cache/ags/user/generated/terminal/sequences.txt
@@ -29,14 +31,18 @@ alias py=python
 alias g=git
 alias p=paru
 alias cls="clear && fastfetch"
+alias c="clear && fastfetch"
 alias venv="python -m venv venv && source venv/bin/activate.fish"
 alias ls='eza --icons=always --color=always -a1 --level 1'
 alias ll='eza --icons=always --color=always -alh --git'
+alias tree='ls --tree --level 1000'
 alias du=dust
 alias df=duf
+alias th=ad
 alias ip='ip -color=auto'
 alias grep='grep --color=auto'
 alias cat=bat
+alias catt='command cat'
 alias icat="kitten icat"
 alias diff="delta"
 # alias ssh="kitty +kitten ssh"
@@ -76,3 +82,7 @@ set -xU MANPAGER 'less -R --use-color -Dd+r -Du+b'
 set -xU MANROFFOPT '-P -c'
 
 export EDITOR=nvim
+export SUDO_PROMPT="$(tput setaf 1 bold)Password:$(tput sgr0) "
+
+# Created by `pipx` on 2025-01-14 11:42:19
+set PATH $PATH /home/meflove/.local/bin
