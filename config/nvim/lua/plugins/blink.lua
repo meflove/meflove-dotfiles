@@ -29,7 +29,7 @@ return {
 
       sources = {
         -- remember to enable your providers here
-        default = { "lsp", "path", "snippets", "buffer", "lazydev" },
+        default = { "lsp", "path", "snippets", "buffer", "lazydev", "codeium" },
         providers = {
           lazydev = {
             name = "LazyDev",
@@ -37,6 +37,7 @@ return {
             -- make lazydev completions top priority (see `:h blink.cmp`)
             score_offset = 100,
           },
+          codeium = { name = "Codeium", module = "codeium.blink", async = true },
         },
       },
 
