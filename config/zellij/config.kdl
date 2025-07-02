@@ -23,9 +23,9 @@ keybinds clear-defaults=true {
         bind "Alt h" {
             SwitchToMode "move"
         }
-        bind "Ctrl p" {
-            SwitchToMode "tmux"
-        }
+        // bind "Ctrl p" {
+        //     SwitchToMode "tmux"
+        // }
         bind "Alt q" {
             SwitchToMode "tmux"
         }

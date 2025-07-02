@@ -16,13 +16,36 @@
   "menus.dashboard.shortcuts.left.shortcut3.command": "equibop",
   "bar.layouts": {
     "0": {
-      "left": ["dashboard", "windowtitle"],
-      "middle": ["ram", "cpu", "media", "workspaces", "clock"],
-      "right": ["volume", "notifications"]
+      "left": [
+        "dashboard",
+        "windowtitle"
+      ],
+      "middle": [
+        "ram",
+        "cpu",
+        "media",
+        "workspaces",
+        "clock"
+      ],
+      "right": [
+        "systray",
+        "kbinput",
+        "volume",
+        "notifications"
+      ]
     },
     "1": {
-      "left": ["dashboard", "windowtitle"],
-      "middle": ["ram", "cpu", "media", "workspaces", "clock"],
+      "left": [
+        "dashboard",
+        "windowtitle"
+      ],
+      "middle": [
+        "ram",
+        "cpu",
+        "media",
+        "workspaces",
+        "clock"
+      ],
       "right": [
         "systray",
         "kbinput",
@@ -463,6 +486,8 @@
   "theme.osd.margins": "7px 7px 7px 7px",
   "bar.customModules.hypridle.onIcon": "󰒳",
   "bar.customModules.hypridle.offIcon": "󰒲",
-  "theme.bar.menus.card_radius": "0.4em"
+  "theme.bar.menus.card_radius": "0.4em",
+  "bar.customModules.storage.paths": [
+    "/"
+  ]
 }
-

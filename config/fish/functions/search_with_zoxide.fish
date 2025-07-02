@@ -1,4 +1,4 @@
-function search_with_zoxdie
+function search_with_zoxide
     if test -z "$argv[1]"
         # Use fd with fzf to select & open a file when no args are provided
         set file (fd --type f -I -H -E .git -E .git-crypt -E .cache -E .backup | fzf --height=70% --preview='bat -n --color=always --line-range :500 {}')

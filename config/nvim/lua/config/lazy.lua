@@ -48,6 +48,7 @@ vim.filetype.add({
   pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
 
+
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins

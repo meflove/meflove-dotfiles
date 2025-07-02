@@ -1,5 +1,4 @@
 jorgebucaran/fisher
-patrickf1/fzf.fish
 franciscolourenco/done
 jorgebucaran/spark.fish
 jorgebucaran/autopair.fish
@@ -8,3 +7,5 @@ mattmc3/magic-enter.fish
 orefalo/grc
 kpbaks/zellij.fish
 jorgebucaran/nvm.fish
+jorgebucaran/fishtape
+matchai/spacefish

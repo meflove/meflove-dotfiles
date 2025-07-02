@@ -10,19 +10,19 @@ end
 
 # ====== Сочетания клавиш ======
 fish_default_key_bindings
-fzf_configure_bindings --variables=
 
 # ====== Интерактивные настройки ======
 if status is-interactive
     # Основные настройки
     set fish_greeting
+    source ~/.config/fish/functions/_init_autin.fish
 
     # Zellij
     export ZELLIJ_CONFIG_DIR=$HOME/.config/zellij
-    set ZELLIJ_AUTO_ATTACH true
 
     # # Автозапуск Zellij в Ghostty
     if [ "$TERM" = xterm-ghostty ]
+        set ZELLIJ_AUTO_ATTACH true
         eval (zellij setup --generate-auto-start fish | string collect)
     end
 end
@@ -31,7 +31,9 @@ end
 # ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ Системные утилиты ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 alias ls='eza --icons=always --color=always -a1 --level 1'
 alias ll='eza --icons=always --color=always -alh --git'
+# alias rm=rmt
 alias tree='ls --tree --level 1000'
+alias less='less -R'
 alias du=dust
 alias df=duf
 alias ip='ip -color=auto'
@@ -40,19 +42,21 @@ alias cat=bat
 alias catt='command cat'
 alias Holes='sudo netstat -tupln'
 alias err='journalctl -b -p err'
+alias syslog_emerg='sudo dmesg --level=emerg,alert,crit'
 
 # ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ Редакторы и разработка ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 alias n=nvim
+alias nv="NVIM_APPNAME='nvim-NvChad' nvim"
 alias m=micro
 alias py=python
 alias dif="delta"
 alias th=ad
-alias nzo='search_with_zoxdie'
-alias venv="uv venv && source .venv/bin/activate.fish"
+alias ssh="ggh"
+alias nzo="search_with_zoxide"
 alias zigup="command sudo zigup --install-dir /home/meflove/.zig"
 
 # ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ Управление пакетами ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-alias p=paru
+alias p="socks_proxy=127.0.0.1:2080 socks5_proxy=127.0.0.1:2080 http_proxy=127.0.0.1:2080 https_proxy=127.0.0.1:2080 paru"
 alias pamcan=pacman
 alias hmmm='paru -Sy &> /dev/null && paru -Qu'
 alias pkglist='pacman -Qs --color=always | less -R'
@@ -87,27 +91,40 @@ alias se=sudoedit
 abbr mkdir 'mkdir -p'
 abbr rm 'rm -rf'
 abbr cp 'cp -r'
+abbr makepkg 'makepkg -sric --skipinteg'
 
 # ====== Переменные окружения ======
 export EDITOR=nvim
 export SUDO_PROMPT="$(tput setaf 1 bold)Password:$(tput sgr0) "
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 export TERM="xterm-256color"
+export RIP_GRAVEYARD="~/.local/share/Trash"
+export no_proxy="127.0.0.1"
+export SPACEFISH_USER_SHOW="always"
+export GDK_BACKEND="wayland"
 
 # ====== Настройки путей ======
-fish_add_path .cargo/bin/
+fish_add_path /home/meflove/.cargo/bin/ $HOME/.ZAP_D/webdriver/linux/64
 
 # Pipx
 set PATH $PATH /home/meflove/.local/bin
 
 # npm
 export npm_config_prefix="$HOME/.local"
+
 # ====== Дополнительные функции ======
+
+source $__fish_config_dir/functions/magic-enter-cmd.fish
+source $__fish_config_dir/themes/tokyo-night-moon.fish
+
 # Starship prompt
-starship init fish | source
+# starship init fish | source
+
+# Automatically set Wayland vars for root sessions
+if test (id -u) -eq 0
+    set -gx XDG_RUNTIME_DIR /run/user/1000
+    set -gx WAYLAND_DISPLAY wayland-1
+end
 
 # Zoxide (быстрый переход по директориям)
 zoxide init fish | source
-
-source $__fish_config_dir/functions/magic-enter-cmd.fish
-source ~/.config/fish/themes/tokyo-night-moon.fish
