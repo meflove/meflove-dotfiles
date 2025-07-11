@@ -1,28 +1,26 @@
-function b
-    if test -z "$argv[1]"
-        # Use fd with fzf to select & open a file when no args are provided
-        set file (fd --type f -I -H -E .git -E .git-crypt -E .cache -E .backup | fzf --height=70% --preview='bat -n --color=always --line-range :500 {}')
-        if test -n "$file"
-            command blobdrop "$file"
-        end
-    else
-        # Handle when an arg is provided
-        set count (count $argv)
+function __fzf_complete_bd
+    set -l tokens (commandline -op)
+    set -l token (commandline -t)
 
-        if test $count -eq 1; and test -e "$argv[1]"
-            set file $argv[1]
-            if test -e "$file"; and test -f "$file"
-                command blobdrop "$file"
-            else if test -e "$file"; and test -d "$file"
-                set file (fd --type f -I -H -E .git -E .git-crypt -E .cache -E .backup | fzf --height=70% --preview='bat -n --color=always --line-range :500 {}')
-                if test -n "$file"
-                    command blobdrop "$file"
-                end
-            else
-                echo "No matches found." >&2
-            end
-        else
-            command blobdrop $argv[1]
+    # Если первый токен - 'bd' и это первый аргумент
+    if test (count $tokens) -ge 1 && [ "$tokens[1]" = bd ] && test (count $tokens) -le 2
+        # Запуск fzf с bat preview
+        set -l file (
+            fzf --height 40% --reverse --border --query="$token" \
+                --preview="bat --style=numbers --color=always {} 2>/dev/null | head -500" \
+                --preview-window="right:60%"
+        )
+
+        if test -n "$file"
+            commandline -t ""
+            commandline -it -- (string escape -- "$file")
         end
+        commandline -f repaint
+    else
+        # Стандартное автодополнение для других команд
+        commandline -f complete
     end
 end
+
+# Привязка к Tab
+bind \t __fzf_complete_bd

@@ -489,4 +489,7 @@ return {
   dependencies = {
     "saghen/blink.cmp",
   },
+  opts = {
+    experimental = { check_rtp_message = false },
+  },
 }

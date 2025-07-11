@@ -31,7 +31,6 @@ end
 # ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ Системные утилиты ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 alias ls='eza --icons=always --color=always -a1 --level 1'
 alias ll='eza --icons=always --color=always -alh --git'
-# alias rm=rmt
 alias tree='ls --tree --level 1000'
 alias less='less -R'
 alias du=dust
@@ -43,6 +42,7 @@ alias catt='command cat'
 alias Holes='sudo netstat -tupln'
 alias err='journalctl -b -p err'
 alias syslog_emerg='sudo dmesg --level=emerg,alert,crit'
+alias bd=blobdrop
 
 # ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ Редакторы и разработка ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 alias n=nvim
@@ -56,7 +56,7 @@ alias nzo="search_with_zoxide"
 alias zigup="command sudo zigup --install-dir /home/meflove/.zig"
 
 # ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ Управление пакетами ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-alias p="socks_proxy=127.0.0.1:2080 socks5_proxy=127.0.0.1:2080 http_proxy=127.0.0.1:2080 https_proxy=127.0.0.1:2080 paru"
+alias p="paru"
 alias pamcan=pacman
 alias hmmm='paru -Sy &> /dev/null && paru -Qu'
 alias pkglist='pacman -Qs --color=always | less -R'
@@ -116,6 +116,7 @@ export npm_config_prefix="$HOME/.local"
 
 source $__fish_config_dir/functions/magic-enter-cmd.fish
 source $__fish_config_dir/themes/tokyo-night-moon.fish
+source ~/.config/fish/functions/blobdrop.fish
 
 # Starship prompt
 # starship init fish | source
