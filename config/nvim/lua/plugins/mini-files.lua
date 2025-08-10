@@ -2,11 +2,11 @@ return {
   -- lazyvim's mini.files extra has a few extra functions in its config function,
   --  to avoid clobbering those, I recommend only using opts:
   {
-    'echasnovski/mini.files',
+    "echasnovski/mini.files",
     lazy = false,
     opts = {
       options = {
-        use_as_default_explorer = true
+        use_as_default_explorer = true,
       },
     },
     keys = {
@@ -25,5 +25,5 @@ return {
         desc = "Open mini.files (cwd)",
       },
     },
-  }
+  },
 }

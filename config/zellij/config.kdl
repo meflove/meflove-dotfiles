@@ -339,9 +339,6 @@ keybinds clear-defaults=true {
         bind "Alt o" {
             MoveTab "right"
         }
-        bind "Ctrl q" {
-            Quit
-        }
     }
     shared_except "locked" "tab" {
         bind "Alt t" {
@@ -789,8 +786,10 @@ themes {
 // changing these requires a restart to take effect
 plugins {
     about location="zellij:about"
-    compact-bar location="zellij:compact-bar"
-    configuration location="zellij:configuration"
+    compact-bar location="zellij:compact-bar" {
+        tooltip "F1"
+    }
+    configuration location="zellij:configuration" 
     filepicker location="zellij:strider" {
         cwd "/"
     }

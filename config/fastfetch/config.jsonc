@@ -5,10 +5,10 @@
       "top": 0,
       "left": 0,
     },
-    "source": "/home/meflove/.config/fastfetch/logo1",
+    "source": "/home/meflove/.config/fastfetch/logo",
     "color": {
-      "1": "blue",
-      "2": "magenta",
+      // "1": "blue",
+      "1": "magenta",
     },
   },
   "modules": [
@@ -101,12 +101,12 @@
       "key": "├─",
       "keyColor": "magenta",
     },
-    // {
-    //   "type": "publicip",
-    // "key": "├─󰩠",
-    // "keyColor": "magenta",
-    // "timeout": 2000
-    // },
+    {
+      "type": "publicip",
+      "key": "├─󰩠",
+      "keyColor": "magenta",
+      "timeout": 500,
+    },
     {
       "type": "localip",
       "key": "├─󰩟",

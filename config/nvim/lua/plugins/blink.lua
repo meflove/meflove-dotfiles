@@ -7,26 +7,28 @@ return {
       "L3MON4D3/LuaSnip",
       "saghen/blink.compat",
       "folke/lazydev.nvim",
+      "giuxtaposition/blink-cmp-copilot",
     },
 
     ---@module 'blink.cmp'
     ---@type blink.cmp.Config
     opts = {
-      keymap = { preset = "super-tab" },
+      -- keymap = { preset = "super-tab" },
       snippets = { preset = "luasnip" },
 
       -- 🔧 Источники автодополнения
       sources = {
-        default = { "lsp", "path", "snippets", "buffer", "lazydev" },
-        compat = { "codeium" },
+        default = { "lsp", "path", "snippets", "buffer", "lazydev", "copilot" },
         providers = {
           lazydev = {
             name = "LazyDev",
             module = "lazydev.integrations.blink",
             score_offset = 100,
           },
-          codeium = {
-            kind = "Codeium",
+          copilot = {
+            name = "copilot",
+            module = "blink-cmp-copilot",
+            kind = "Copilot",
             score_offset = 100,
             async = true,
           },

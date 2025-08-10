@@ -31,6 +31,7 @@ end
 # ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ Системные утилиты ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 alias ls='eza --icons=always --color=always -a1 --level 1'
 alias ll='eza --icons=always --color=always -alh --git'
+alias gp='gtrash put'
 alias tree='ls --tree --level 1000'
 alias less='less -R'
 alias du=dust
@@ -42,7 +43,7 @@ alias catt='command cat'
 alias Holes='sudo netstat -tupln'
 alias err='journalctl -b -p err'
 alias syslog_emerg='sudo dmesg --level=emerg,alert,crit'
-alias bd=blobdrop
+alias watch=viddy
 
 # ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ Редакторы и разработка ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 alias n=nvim
@@ -92,6 +93,7 @@ abbr mkdir 'mkdir -p'
 abbr rm 'rm -rf'
 abbr cp 'cp -r'
 abbr makepkg 'makepkg -sric --skipinteg'
+abbr bd blobdrop
 
 # ====== Переменные окружения ======
 export EDITOR=nvim
@@ -116,7 +118,6 @@ export npm_config_prefix="$HOME/.local"
 
 source $__fish_config_dir/functions/magic-enter-cmd.fish
 source $__fish_config_dir/themes/tokyo-night-moon.fish
-source ~/.config/fish/functions/blobdrop.fish
 
 # Starship prompt
 # starship init fish | source

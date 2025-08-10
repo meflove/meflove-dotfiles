@@ -1,10 +1,13 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export GEMINI_API_KEY:AIzaSyDD4VmxBGkCUm4kvw6B_eKOjWliUJdY7A4
+SETUVAR --export GOOGLE_CLOUD_LOCATION:NL
 SETUVAR --export MANPAGER:less\x20\x2dR\x20\x2d\x2duse\x2dcolor\x20\x2dDd\x2br\x20\x2dDu\x2bb
 SETUVAR --export MANROFFOPT:\x2dP\x20\x2dc
 SETUVAR __done_min_cmd_duration:300000
 SETUVAR __fish_initialized:3800
 SETUVAR _fisher_franciscolourenco_2F_done_files:\x7e/\x2econfig/fish/conf\x2ed/done\x2efish
+SETUVAR _fisher_gazorby_2F_fifc_files:\x7e/\x2econfig/fish/functions/_fifc\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_action\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_completion_group\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_expand_tilde\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_cmd\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_fn\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_opt\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_open_process\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_parse_complist\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_parse_pid\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_path_to_complete\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_cmd\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_file_default\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_fn\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_opt\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_preview_process\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_source_directories\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_source_files\x2efish\x1e\x7e/\x2econfig/fish/functions/_fifc_test_version\x2efish\x1e\x7e/\x2econfig/fish/functions/fifc\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fifc\x2efish\x1e\x7e/\x2econfig/fish/completions/fifc\x2efish
 SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fishtape_files:\x7e/\x2econfig/fish/functions/fishtape\x2efish\x1e\x7e/\x2econfig/fish/completions/fishtape\x2efish
@@ -15,8 +18,12 @@ SETUVAR _fisher_matchai_2F_spacefish_files:\x7e/\x2econfig/fish/functions/__sf_l
 SETUVAR _fisher_mattmc3_2F_magic_2D_enter_2E_fish_files:\x7e/\x2econfig/fish/conf\x2ed/magic\x2denter\x2efish
 SETUVAR _fisher_nickeb96_2F_puffer_2D_fish_files:\x7e/\x2econfig/fish/functions/_puffer_fish_expand_bang\x2efish\x1e\x7e/\x2econfig/fish/functions/_puffer_fish_expand_dots\x2efish\x1e\x7e/\x2econfig/fish/functions/_puffer_fish_expand_lastarg\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/puffer_fish_key_bindings\x2efish
 SETUVAR _fisher_orefalo_2F_grc_files:\x7e/\x2econfig/fish/functions/_grc_wrap\x2efish\x1e\x7e/\x2econfig/fish/functions/cvs\x2efish\x1e\x7e/\x2econfig/fish/functions/df\x2efish\x1e\x7e/\x2econfig/fish/functions/diff\x2efish\x1e\x7e/\x2econfig/fish/functions/dig\x2efish\x1e\x7e/\x2econfig/fish/functions/g\x2b\x2b\x2efish\x1e\x7e/\x2econfig/fish/functions/gcc\x2efish\x1e\x7e/\x2econfig/fish/functions/ifconfig\x2efish\x1e\x7e/\x2econfig/fish/functions/make\x2efish\x1e\x7e/\x2econfig/fish/functions/mount\x2efish\x1e\x7e/\x2econfig/fish/functions/mtr\x2efish\x1e\x7e/\x2econfig/fish/functions/netstat\x2efish\x1e\x7e/\x2econfig/fish/functions/ping\x2efish\x1e\x7e/\x2econfig/fish/functions/ps\x2efish\x1e\x7e/\x2econfig/fish/functions/tail\x2efish\x1e\x7e/\x2econfig/fish/functions/traceroute\x2efish\x1e\x7e/\x2econfig/fish/functions/wdiff\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1efranciscolourenco/done\x1ejorgebucaran/spark\x2efish\x1ejorgebucaran/autopair\x2efish\x1enickeb96/puffer\x2dfish\x1emattmc3/magic\x2denter\x2efish\x1eorefalo/grc\x1ekpbaks/zellij\x2efish\x1ejorgebucaran/nvm\x2efish\x1ejorgebucaran/fishtape\x1ematchai/spacefish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1efranciscolourenco/done\x1ejorgebucaran/spark\x2efish\x1ejorgebucaran/autopair\x2efish\x1enickeb96/puffer\x2dfish\x1emattmc3/magic\x2denter\x2efish\x1eorefalo/grc\x1ekpbaks/zellij\x2efish\x1ejorgebucaran/nvm\x2efish\x1ejorgebucaran/fishtape\x1ematchai/spacefish\x1egazorby/fifc
 SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR --export fifc_editor:nvim
+SETUVAR fifc_fd_opts:\x2d\x2dhidden
+SETUVAR fifc_keybinding:\x09
+SETUVAR fifc_open_keybinding:ctrl\x2do
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2d\x2dreverse
 SETUVAR fish_color_command:blue
